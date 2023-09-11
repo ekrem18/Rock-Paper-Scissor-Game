@@ -1,7 +1,7 @@
 //* ------ Selectors ------- */
 const selectionArticle = document.querySelector(".selection")
 
-//? Secilen elemanlarin tayicilari
+//? Secilen elemanlarin divleri
 const yourChoiceDiv = document.getElementById("your-choice")
 const pcChoiceDiv = document.getElementById("pc-choice")
 
@@ -100,7 +100,7 @@ const openModal = () => {
   modalCardSection.classList.add("show")
 
   if (yourScoreSpan.textContent === "10") {
-    //? eger kullanici 10 puana usalti ise kullanici kazanmistir.
+    //? eger kullanici 10 puana ulasti ise kullanici kazanmistir.
     finalMessagePar.textContent = "💃 You Win🕺"
     document.querySelector(".modal").style.backgroundColor = GREEN
     playAgainBtn.style.color = GREEN
